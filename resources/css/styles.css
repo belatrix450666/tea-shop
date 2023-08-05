@@ -7,17 +7,30 @@ body, header, nav a {
   text-align: center;
 }
 
+html {
+  scroll-padding-top: 70px;
+}
+
 header {
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 69px;
   border-bottom: 1px solid seashell;
   margin: 0 10px;
+  z-index: 1000;
+  background-color: black;
 }
 
 #image-logo {
   height: 50px;
+}
+
+nav {
+  margin: 0 50px;
 }
 
 nav ul {
@@ -29,14 +42,11 @@ nav ul li {
   margin: 0 10px;
 }
 
-nav ul li:last-child {
-  margin-right: 0;
-}
-
 #our-mission {
   position: relative;
   display: grid;
   place-items: center;
+  padding-top: 50px;
 }
 
 #our-mission img {
